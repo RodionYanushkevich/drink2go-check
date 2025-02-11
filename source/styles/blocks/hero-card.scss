@@ -1,0 +1,13 @@
+// уберешь наместо
+
+// начни с выыранивания
+.hero-cards__list {
+  list-style: none;
+}
+
+
+.hero-card {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}

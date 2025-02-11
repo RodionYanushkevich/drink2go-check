@@ -20,34 +20,36 @@
       </picture>
     </a>
 
-    <nav class="page-header__nav  navigation">
-      <ul class="navigation__list navigation__list--user-actions">
-        <li class="navigation__item">
-
-          <a class="navigation__link" href="#">
+    <nav class="header__nav  navigation">
+      <!-- личный кабинет -->
+      <ul class="navigation__user-list">
+        <li class="navigation__user-item">
+          <a class="navigation__user-link" href="#">
             <svg width="16" height="16">
               <use class="navigation__user-icon" href="icons/stack.svg#user"></use>
             </svg>
             <span class="navigation__user-description">Личный кабинет</span></a>
         </li>
-        <li class="navigation__item"><a class="navigation__link" href="#">
-
+        <li class="navigation__user-item"><a class="navigation__user-link" href="#">
             <svg width="16" height="16">
               <use class="navigation__user-icon" href="icons/stack.svg#union"></use>
             </svg>
             <span class="navigation__user-description">Корзина</span></a></li>
       </ul>
-
-      <ul class="navigation__list">
+      <!-- ссылки -->
+      <ul class="navigation__list navigation__list">
         <li class="navigation__item"><a class="navigation__link navigation__link--current" href="index.html" tabindex="-1">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Каталог продукции</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">О нас</a></li>
       </ul>
+
+      <button class="navigation__button" type="button"><span class="visually-hidden">кнопка меню</span></button>
     </nav>
   </header>
 
-  <main class="main">
+  <main class="page__main">
+    <!-- HERO -->
     <section class="main__hero hero" data-test="hero">
 
       <h1 class="visually-hidden">Кофейные напитки Drink2Go</h1>
@@ -74,7 +76,7 @@
             </article>
           </li>
           <!-- 2 карта -->
-          <li class="hero-cards__list-item">
+          <li class="hero-cards__list-item visually-hidden">
             <article class="hero-card">
               <picture>
                 <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-lavender-desktop@1x.webp 1x, images/hero/hero-lavender-desktop@2x.webp 2x" width="600" height="600">
@@ -92,7 +94,7 @@
             </article>
           </li>
           <!-- 3 карта -->
-          <li class="hero-cards__list-item">
+          <li class="hero-cards__list-item visually-hidden">
 
             <article class="hero-card">
               <picture>
@@ -395,7 +397,7 @@
     <div class="copyrights-wrapper">
       <span>Разработано в HTML Academy</span>
       <svg class="copyrights" width="12" height="16">
-        <use class="copyrights__logo-image logo-image" href="icons/stack.svg#academy-logo" alt="Логотип HTML Academy">
+        <use class="copyrights__logo-image" href="icons/stack.svg#academy-logo" alt="Логотип HTML Academy">
       </svg>
     </div>
 
