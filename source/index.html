@@ -14,16 +14,28 @@
   <header class="header">
     <a class="header__logo-link" href="index.html">
       <picture>
-        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/desktop-logo.svg" width="170" height="36">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/tablet-logo.svg" width="82" height="36">
-        <img class="header__logo-image logo-image" src="images/mobile-logo.svg" alt="Логотип Drink2Go" width="32" height="36">
+        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
+        <img class="header__logo-image logo-image" src="images/logo-mobile.svg" alt="Логотип Drink2Go" width="32" height="36">
       </picture>
     </a>
 
     <nav class="page-header__nav  navigation">
       <ul class="navigation__list navigation__list--user-actions">
-        <li class="navigation__item"><a class="navigation__link" href="profile.html">Личный кабинет</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="cart.html">Корзина</a></li>
+        <li class="navigation__item">
+
+          <a class="navigation__link" href="#">
+            <svg width="16" height="16">
+              <use class="navigation__user-icon" href="icons/stack.svg#user"></use>
+            </svg>
+            <span class="navigation__user-description">Личный кабинет</span></a>
+        </li>
+        <li class="navigation__item"><a class="navigation__link" href="#">
+
+            <svg width="16" height="16">
+              <use class="navigation__user-icon" href="icons/stack.svg#union"></use>
+            </svg>
+            <span class="navigation__user-description">Корзина</span></a></li>
       </ul>
 
       <ul class="navigation__list">
@@ -48,9 +60,9 @@
           <li class="hero-cards__list-item">
             <article class="hero-card">
               <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/#.webp 1x, images/#.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/#.webp 1x, images/#.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="280" height="280">
+                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-flat-desktop@1x.webp 1x, images/hero/hero-flat-desktop@2x.webp 2x" width="600" height="600">
+                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-flat-tablet@1x.webp 1x, images/hero/hero-flat-tablet@2x.webp 2x" width="476" height="476">
+                <img class="hero-card__image" src="images/hero/hero-flat-mobile@1x.webp" srcset="images/hero/hero-flat-mobile@2x.webp" alt="Декаф Флэт Уайт" width="280" height="280">
               </picture>
               <span class="hero-card__new">Новинка!</span>
               <h3 class="hero-card__title">Декаф Флэт Уайт</h3>
@@ -65,10 +77,11 @@
           <li class="hero-cards__list-item">
             <article class="hero-card">
               <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/#.webp 1x, images/#.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/#.webp 1x, images/#.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/#.webp" alt="Лавандовый Латте" width="280" height="280">
+                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-lavender-desktop@1x.webp 1x, images/hero/hero-lavender-desktop@2x.webp 2x" width="600" height="600">
+                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-lavender-tablet@1x.webp 1x, images/hero/hero-lavender-tablet@2x.webp 2x" width="476" height="476">
+                <img class="hero-card__image" src="images/hero/hero-lavender-mobile@1x.webp" srcset="images/hero/hero-lavender-mobile@2x.webp" alt="Лавандовый Латте" width="280" height="280">
               </picture>
+
               <span class="hero-card__new">Новинка!</span>
               <h3 class="hero-card__title">Лавандовый Латте</h3>
               <p class="hero-card__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом уне сёт вас прямо на вершину Радужных гор</p>
@@ -83,9 +96,9 @@
 
             <article class="hero-card">
               <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/#.webp 1x, images/#.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/#.webp 1x, images/#.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/#.webp" alt="Тройной Эспрессо" width="280" height="280">
+                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-espresso-desktop@1x.webp 1x, images/hero/hero-espresso-desktop@2x.webp 2x" width="600" height="600">
+                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-espresso-tablet@1x.webp 1x, images/hero/hero-espresso-tablet@2x.webp 2x" width="476" height="476">
+                <img class="hero-card__image" src="images/hero/hero-espresso-mobile@1x.webp" srcset="images/hero/hero-espresso-mobile@2x.webp" alt="Тройной Эспрессо" width="280" height="280">
               </picture>
               <span class="hero-card__new">Новинка!</span>
               <h3 class="hero-card__title">Тройной Эспрессо</h3>
@@ -203,7 +216,8 @@
         <ul class="catalog__cards-list">
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+
+              <img class="card__image" src="images/catalog/deffault-card-image-white@1x.webp" srcset="images/catalog/deffault-card-image-white@2x.webp" alt="Белая дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -215,7 +229,7 @@
           </li>
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+              <img class="card__image" src="images/catalog/deffault-card-image-blue@1x.webp" srcset="images/catalog/deffault-card-image-blue@2x.webp" alt="Синяя дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -227,7 +241,7 @@
           </li>
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+              <img class="card__image" src="images/catalog/deffault-card-image-black@1x.webp" srcset="images/catalog/deffault-card-image-black@2x.webp" alt="Черная дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -239,7 +253,7 @@
           </li>
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+              <img class="card__image" src="images/catalog/deffault-card-image-pink@1x.webp" srcset="images/catalog/deffault-card-image-pink@2x.webp" alt="Розовая дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -251,7 +265,7 @@
           </li>
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+              <img class="card__image" src="images/catalog/deffault-card-image-brown@1x.webp" srcset="images/catalog/deffault-card-image-brown@2x.webp" alt="Коричневая дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -263,7 +277,7 @@
           </li>
           <li class="catalog__cards-item">
             <article class="card">
-              <img class="card__image" src="images/#.webp" alt="Декаф Флэт Уайт" width="130" height="188">
+              <img class="card__image" src="images/catalog/deffault-card-image-yellow@1x.webp" srcset="images/catalog/deffault-card-image-yellow@2x.webp" alt="Желтая дефолтная банка" width="130" height="188">
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -299,9 +313,9 @@
       <h2 class="map__title visually-hidden">как добраться</h2>
 
       <picture>
-        <source type="image/webp" media="(min-width:1440px)" srcset="images/#.webp 1x, images/#.webp 2x" width="1440" height="540">
-        <source type="image/webp" media="(min-width:768px)" srcset="images/#.webp 1x, images/#.webp 2x" width="768" height="480">
-        <img class="map__image" src="images/#.webp" alt="карта где мы находимся" width="320" height="480">
+        <source type="image/webp" media="(min-width:1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x" width="1440" height="540">
+        <source type="image/webp" media="(min-width:768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x" width="768" height="480">
+        <img class="map__image" src="images/map/map-mobile@1x.webp" srcset="images/map/map-mobile@2x.webp" alt="карта где мы находимся" width="320" height="480">
       </picture>
     </section>
   </main>
@@ -310,16 +324,40 @@
 
     <div class="footer__logo-social-wrapper">
       <picture>
-        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/desktop-logo.svg" width="170" height="36">
-        <img class="footer__logo logo-image" src="images/mobile-logo.svg" alt="Логотип Drink2Go" width="32" height="36">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-desktop.svg" width="170" height="36">
+        <img class="footer__logo-image logo-image" src="images/logo-tablet.svg" alt="Логотип Drink2Go" width="83" height="36">
       </picture>
 
       <span class="footer__description">Интернет-магазин кофейных напитков</span>
+
       <!-- микс не микс -->
       <ul class="footer__social-list">
-        <li class="footer__social-item"><a class="footer__social-link" href="#">VK</a></li>
-        <li class="footer__social-item"><a class="footer__social-link" href="#">INSTAGRAM</a></li>
-        <li class="footer__social-item"><a class="footer__social-link" href="#">Одноклассники</a></li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" title="наша страница ВКонтекте">
+            <span class="visually-hidden">Вконтакте</span>
+
+            <svg width="20" height="20">
+              <use href="icons/stack.svg#vk"></use>
+            </svg>
+
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" title="наша страница Pinterest">
+            <span class="visually-hidden">Pinterest</span>
+            <svg width="22" height="22">
+              <use href="icons/stack.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#" title="наша страница Однокласниках">
+            <span class="visually-hidden">Однокласники</span>
+            <svg width="20" height="20">
+              <use href="icons/stack.svg#ok"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -356,8 +394,11 @@
 
     <div class="copyrights-wrapper">
       <span>Разработано в HTML Academy</span>
-      <img class="copyrights__logo-image logo-image" src="images/#" alt="Логотип HTML Academy" width="12" height="16">
+      <svg class="copyrights" width="12" height="16">
+        <use class="copyrights__logo-image logo-image" href="icons/stack.svg#academy-logo" alt="Логотип HTML Academy">
+      </svg>
     </div>
+
   </footer>
 </body>
 
