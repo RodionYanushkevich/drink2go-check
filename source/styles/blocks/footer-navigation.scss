@@ -3,16 +3,26 @@
   list-style: none;
   padding: 0;
   // padding: 20px 0;
+
+  @media ($viewport-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // column-gap: 30px;
+  }
 }
 
 .footer-navigation__item {
   // padding: 0 20px 19px;
-  padding: 20px 20px 19px;
-
-  border-bottom: 1px solid $base-secondary;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+  padding: 20px 20px 19px;
+
+  border-bottom: 1px solid $base-secondary;
+
+  @media ($viewport-tablet) {
+    border: none;
+  }
 }
 
 .footer-navigation__link-list {
