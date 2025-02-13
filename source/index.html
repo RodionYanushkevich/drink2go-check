@@ -168,41 +168,54 @@
 
         <fieldset class="form__fieldset milk-fieldset">
           <legend class="form__fieldset-legend">Наличие молока</legend>
-
-          <input class="milk-fieldset__input" id="milk-availability-any" name="milk-availability" type="radio" value="any" required>
-          <label class="milk-fieldset__label" for="milk-availability-any">Неважно</label>
-
-          <input class="milk-fieldset__input" id="milk-availability-animal" name="milk-availability" type="radio" value="animal" required>
-          <label class="milk-fieldset__label" for="milk-availability-animal">Только животное</label>
-
-          <input class="milk-fieldset__input" id="milk-availability-plant" name="milk-availability" type="radio" value="plant" required>
-          <label class="milk-fieldset__label" for="milk-availability-plant">Только растительное</label>
-
-          <input class="milk-fieldset__input" id="milk-availability-none" name="milk-availability" type="radio" value="none" required>
-          <label class="milk-fieldset__label" for="milk-availability-none">Без молока</label>
+          <ul>
+            <li>
+              <input class="milk-fieldset__input" id="milk-availability-any" name="milk-availability" type="radio" value="any" required checked>
+              <label class="milk-fieldset__label label" for="milk-availability-any">Неважно</label>
+            </li>
+            <li>
+              <input class="milk-fieldset__input" id="milk-availability-animal" name="milk-availability" type="radio" value="animal" required>
+              <label class="milk-fieldset__label" for="milk-availability-animal">Только животное</label>
+            </li>
+            <li>
+              <input class="milk-fieldset__input" id="milk-availability-plant" name="milk-availability" type="radio" value="plant" required>
+              <label class="milk-fieldset__label" for="milk-availability-plant">Только растительное</label>
+            </li>
+            <li>
+              <input class="milk-fieldset__input" id="milk-availability-none" name="milk-availability" type="radio" value="none" disabled required>
+              <label class="milk-fieldset__label" for="milk-availability-none">Без молока</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__fieldset country-fieldset">
           <legend class="form__fieldset-legend">Страна производитель</legend>
-
-          <input class="country-fieldset__input" id="country-brazil" name="country" type="checkbox" value="brazil">
-          <label class="country-fieldset__label" for="country-brazil">Бразилия</label>
-
-          <input class="country-fieldset__input" id="country-ethiopia" name="country" type="checkbox" value="ethiopia">
-          <label class="country-fieldset__label" for="country-ethiopia">Эфиопия</label>
-
-          <input class="country-fieldset__input" id="country-colombia" name="country" type="checkbox" value="colombia">
-          <label class="country-fieldset__label" for="country-colombia">Колумбия</label>
-
-          <input class="country-fieldset__input" id="country-costa-rica" name="country" type="checkbox" value="costa-rica">
-          <label class="country-fieldset__label" for="country-costa-rica">Коста-Рика</label>
-
-          <input class="country-fieldset__input" id="country-peru" name="country" type="checkbox" value="peru">
-          <label class="country-fieldset__label" for="country-peru">Перу</label>
+          <ul>
+            <li>
+              <input class="country-fieldset__input" id="country-brazil" name="country" type="checkbox" value="brazil" required checked>
+              <label class="country-fieldset__label" for="country-brazil">Бразилия</label>
+            </li>
+            <li>
+              <input class="country-fieldset__input" id="country-ethiopia" name="country" type="checkbox" value="ethiopia">
+              <label class="country-fieldset__label" for="country-ethiopia">Эфиопия</label>
+            </li>
+            <li>
+              <input class="country-fieldset__input" id="country-colombia" name="country" type="checkbox" value="colombia">
+              <label class="country-fieldset__label" for="country-colombia">Колумбия</label>
+            </li>
+            <li>
+              <input class="country-fieldset__input" id="country-costa-rica" name="country" type="checkbox" value="costa-rica">
+              <label class="country-fieldset__label" for="country-costa-rica">Коста-Рика</label>
+            </li>
+            <li>
+              <input class="country-fieldset__input" id="country-peru" name="country" type="checkbox" value="peru" disabled>
+              <label class="country-fieldset__label" for="country-peru">Перу</label>
+            </li>
+          </ul>
         </fieldset>
 
         <fieldset class="form__fieldset button-fieldset">
-          <legend class="form__fieldset-legend visually-hidden">кнопки применить и очистить</legend>
+          <legend class="form__fieldset-legend visually-hidden">Кнопки применить и очистить</legend>
           <button class="button-fieldset__button button" type="submit">Применить</button>
           <button class="button-fieldset__button button--reset" type="reset">Сбросить</button>
         </fieldset>

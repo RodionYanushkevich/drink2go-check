@@ -5,3 +5,32 @@
   padding: 0;
   border: 0;
 }
+
+.form__fieldset-legend {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #333333;
+}
+
+.form__fieldset input {
+  display: none;
+}
+
+.form__fieldset label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  cursor: pointer;
+}
+
+.form__fieldset ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,86 @@
+.country-fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px 0 30px;
+}
+
+.country-fieldset__label {
+  display: flex;
+  position: relative;
+  padding: 0 0 0 72px;
+
+  &:hover::before,
+  &:focus-visible::before {
+    transition: background-color 300ms ease;
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid $primary-lighter;
+  }
+}
+
+.country-fieldset__label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  box-sizing: border-box;
+  width: 42px;
+  height: 24px;
+
+  border-radius: 12px;
+  background: $base-grey;
+
+  border: 2px solid $base-grey;
+}
+
+.country-fieldset__label::after {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 12px;
+
+  background-color: $base-white;
+}
+
+.country-fieldset__input {
+  &:checked + .country-fieldset__label::before {
+    background-color: $base-primary;
+    border: 2px solid $base-primary;
+  }
+
+  &:checked + .country-fieldset__label::after {
+    transition: transform 500ms ease;
+    transform: translateX(18px);
+  }
+
+  &:not(:checked) + .country-fieldset__label::after {
+    transition: transform 500ms ease;
+    transform: translateX(0);
+  }
+
+  &:checked + .country-fieldset__label:hover::before {
+    opacity: 0.8;
+  }
+
+  &:disabled + .country-fieldset__label {
+    color: $base-grey;
+    pointer-events: none;
+  }
+
+  &:disabled + .country-fieldset__label::before {
+    border: 2px solid $light-grey;
+    background-color: $light-grey;
+  }
+
+  &:disabled:checked + .country-fieldset__label::after {
+    // border: 2px solid $light-grey;
+    // background-color: $light-grey;
+    background-color: $base-grey;
+  }
+}
