@@ -8,7 +8,7 @@
 .country-fieldset__label {
   display: flex;
   position: relative;
-  padding: 0 0 0 72px;
+  padding: 0 0 0 52px;
 
   &:hover::before,
   &:focus-visible::before {
@@ -84,3 +84,9 @@
     background-color: $base-grey;
   }
 }
+
+// .nouislider {
+//   display: flex;
+//   align-items: center;
+//   height: 24px;
+// }

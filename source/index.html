@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="preload" href="#" type="font/woff2" as="font">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <script src="scripts/index.js" defer></script>
+  <script src="vendor/nouislider/nouislider.js"></script>
 </head>
 
 <body class="page__body" data-test="header">
@@ -155,8 +157,9 @@
         <!-- required пока везде потом разберешься -->
         <fieldset class="form__fieldset price-fieldset">
           <legend class="form__fieldset-legend">Цена</legend>
-          <!-- no-ui-slider потом разберешься -->
-          <span class="no-ui-slider"></span>
+
+          <div class="nouislider"></div>
+
           <div class="price-fieldset__input-wrapper">
             <label class="price-fieldset__label" for="price-left">0</label>
             <input class="price-fieldset__input" id="price-left" name="price-left" type="number" placeholder="Введите цену 1" required>
