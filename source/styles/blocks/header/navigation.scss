@@ -1,0 +1,157 @@
+.navigation {
+  display: flex;
+
+  @media ($viewport-tablet) {
+    justify-content: space-between;
+    align-items: center;
+    // column-gap: 60px;
+  }
+}
+
+// .navigation__account-list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   margin: 0;
+//   padding: 0;
+
+//   list-style: none;
+
+//   @media ($viewport-tablet) {
+//     order: 3;
+//   }
+// }
+
+// .navigation__account-link {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 60px;
+//   aspect-ratio: 1;
+//   box-sizing: border-box;
+
+//   margin: 0;
+//   padding: 0;
+
+//   color: $base-black;
+//   text-decoration: none;
+
+//   @media ($viewport-tablet) {
+//     width: unset;
+//     aspect-ratio: unset;
+//     padding: 30px 20px;
+
+//     column-gap: 8px;
+//   }
+// }
+
+// .navigation__account-description {
+//   display: none;
+
+//   @media ($viewport-desktop) {
+//     display: inline-block;
+//     // width: unset;
+//   }
+// }
+
+.navigation__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  order: 2;
+
+
+  @media ($viewport-tablet) {
+    display: flex;
+  }
+}
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 21px;
+  box-sizing: border-box;
+
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-black;
+
+  background-color: $base-white;
+  border-bottom: 1px solid $base-secondary;
+
+
+  @media ($viewport-tablet) {
+    padding: 32px 20px;
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+  &:hover,
+  :focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+    color: $base-primary;
+  }
+}
+
+.navigation__link[href="index.html"] {
+  border-top: 1px solid $base-secondary;
+
+  @media ($viewport-tablet) {
+    border-top: none;
+  }
+}
+
+.navigation__link--current {
+  color: $base-primary;
+
+  @media ($viewport-tablet) {
+    border-bottom: 2px solid $base-primary;
+    padding-bottom: 30px;
+  }
+}
+
+
+.navigation__button {
+  display: block;
+  width: 60px;
+  aspect-ratio: 1;
+
+  border: none;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  background-image: url("../../icons/burger.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  background-position: center center;
+
+  @media ($viewport-tablet) {
+    display: none;
+  }
+}
+
+
+.navigation__list--open {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.navigation__button--cross {
+  background-image: url("../../icons/cross.svg");
+}

@@ -11,8 +11,9 @@
 }
 
 .pagination__icon {
-  color: $base-primary;
-  // fill: currentColor;
+  @media ($viewport-tablet) {
+    display: none;
+  }
 }
 
 // .pagination__icon use {
@@ -85,7 +86,7 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  color: $base-primary;
+  // color: $base-primary;
 
   @media ($viewport-tablet) {
     display: inline;

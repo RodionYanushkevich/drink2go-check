@@ -1,0 +1,55 @@
+.user-actions__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media ($viewport-tablet) {
+    order: 3;
+  }
+}
+
+.user-actions__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: $base-black;
+  text-decoration: none;
+
+  @media ($viewport-tablet) {
+    width: unset;
+    aspect-ratio: unset;
+    padding: 30px 20px;
+    column-gap: 8px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+    color: $base-primary;
+  }
+}
+
+.user-actions__icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor; // Цвет иконки будет наследоваться от родителя
+}
+
+.user-actions__description {
+  display: none;
+
+  @media ($viewport-desktop) {
+    display: inline-block; // Показываем текст только на десктопе
+  }
+}

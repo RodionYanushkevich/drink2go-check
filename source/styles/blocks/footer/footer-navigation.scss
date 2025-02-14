@@ -46,4 +46,14 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
 }

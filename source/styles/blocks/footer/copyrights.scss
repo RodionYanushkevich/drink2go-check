@@ -1,0 +1,52 @@
+.copyrights-wrapper {
+  padding: 20px 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 3px;
+  font-size: 12px;
+  line-height: 133%;
+  color: $base-grey;
+}
+
+.copyrights__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  font-size: inherit;
+  line-height: inherit;
+  text-decoration: none;
+
+  color: inherit;
+
+  @media ($viewport-desktop) {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  &:hover {
+    color: $base-primary;
+    outline: none;
+  }
+
+  &:active {
+
+    color: $primary-darker;
+  }
+}
+
+.copyrights__link::before {
+  display: none;
+
+  @media ($viewport-desktop) {
+    position: absolute;
+    left: 1px;
+    content: "HTML Academy";
+    display: inline;
+  }
+}

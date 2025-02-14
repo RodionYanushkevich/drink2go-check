@@ -41,3 +41,16 @@
   font-style: normal;
   text-decoration: none;
 }
+
+.contacts__link {
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+}
+

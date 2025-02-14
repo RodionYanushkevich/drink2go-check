@@ -11,8 +11,9 @@
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/main.scss";
-@import "./blocks/header.scss";
-@import "./blocks/navigation.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/navigation.scss";
+@import "./blocks/header/user-actions.scss";
 /* HERO */
 @import "./blocks/hero.scss";
 @import "./blocks/hero-card.scss";
@@ -30,7 +31,8 @@
 @import "./blocks/catalog/form/button-fieldset.scss";
 /* MAP */
 /* FOOTER */
-@import "./blocks/footer.scss";
-@import "./blocks/footer-navigation.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/copyrights.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/footer-navigation.scss";
+@import "./blocks/footer/contacts.scss";
+@import "./blocks/footer/copyrights.scss";

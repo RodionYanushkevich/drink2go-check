@@ -11,3 +11,16 @@
   $tablet,
   $desktop);
 }
+
+.header__logo-link {
+  margin-right: auto;
+
+  &:hover {
+    outline: none;
+    opacity: 0.9;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
