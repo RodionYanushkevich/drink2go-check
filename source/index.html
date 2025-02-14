@@ -39,7 +39,7 @@
             <span class="navigation__account-description">Корзина</span></a></li>
       </ul>
       <!-- ссылки -->
-      <ul class="navigation__list navigation__list">
+      <ul class="navigation__list">
         <li class="navigation__item"><a class="navigation__link navigation__link--current" href="index.html" tabindex="-1">Главная</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Каталог продукции</a></li>
         <li class="navigation__item"><a class="navigation__link" href="#">Доставка</a></li>
@@ -150,196 +150,227 @@
     </section>
     <!-- КАТАЛОГ -->
     <section class="main__catalog catalog" data-test="catalog">
+      <!-- h4 переделай -->
       <p class="catalog__description badge">Каталог</p>
       <h2 class="catalog__title title">Каталог кофейных напитков</h2>
 
-      <form class="catalog__form form" method="post" action="https://echo.htmlacademy.ru">
-        <!-- required пока везде потом разберешься -->
-        <fieldset class="form__fieldset price-fieldset">
-          <legend class="form__fieldset-legend">Цена</legend>
+      <div class="catalog__form-cards-wrapper">
+        <form class="catalog__form form" method="post" action="https://echo.htmlacademy.ru">
+          <!-- required пока везде потом разберешься -->
+          <fieldset class="form__fieldset price-fieldset">
+            <legend class="form__fieldset-legend">Цена</legend>
 
-          <div class="nouislider"></div>
+            <div class="nouislider-container">
+              <div class="nouislider"></div>
+            </div>
 
-          <div class="price-fieldset__input-wrapper">
-            <label class="price-fieldset__label" for="price-left">0</label>
-            <input class="price-fieldset__input" id="price-left" name="price-left" type="number" placeholder="Введите цену 1" required>
+            <div class="price-fieldset__input-wrapper">
+              <label class="price-fieldset__label visually-hidden" for="price-left">Цена от</label>
+              <input class="price-fieldset__input" id="price-left" name="price-left" type="number" placeholder="0" required>
+              <span class="price-fieldset__divider"></span>
+              <label class="price-fieldset__label visually-hidden" for="price-right">Цена до</label>
+              <input class="price-fieldset__input" id="price-right" name="price-right" type="number" placeholder="0" max="1000" value="900" required>
+            </div>
 
-            <label class="price-fieldset__label" for="price-right">900</label>
-            <input class="price-fieldset__input" id="price-right" name="price-right" type="number" placeholder="Введите цену 1" required>
+          </fieldset>
+
+          <fieldset class="form__fieldset milk-fieldset">
+            <legend class="form__fieldset-legend">Наличие молока</legend>
+            <ul>
+              <li>
+                <input class="milk-fieldset__input" id="milk-availability-any" name="milk-availability" type="radio" value="any" required checked>
+                <label class="milk-fieldset__label label" for="milk-availability-any">Неважно</label>
+              </li>
+              <li>
+                <input class="milk-fieldset__input" id="milk-availability-animal" name="milk-availability" type="radio" value="animal" required>
+                <label class="milk-fieldset__label" for="milk-availability-animal">Только животное</label>
+              </li>
+              <li>
+                <input class="milk-fieldset__input" id="milk-availability-plant" name="milk-availability" type="radio" value="plant" required>
+                <label class="milk-fieldset__label" for="milk-availability-plant">Только растительное</label>
+              </li>
+              <li>
+                <input class="milk-fieldset__input" id="milk-availability-none" name="milk-availability" type="radio" value="none" disabled required>
+                <label class="milk-fieldset__label" for="milk-availability-none">Без молока</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__fieldset country-fieldset">
+            <legend class="form__fieldset-legend">Страна производитель</legend>
+            <ul>
+              <li>
+                <input class="country-fieldset__input" id="country-brazil" name="country" type="checkbox" value="brazil" required checked>
+                <label class="country-fieldset__label" for="country-brazil">Бразилия</label>
+              </li>
+              <li>
+                <input class="country-fieldset__input" id="country-ethiopia" name="country" type="checkbox" value="ethiopia">
+                <label class="country-fieldset__label" for="country-ethiopia">Эфиопия</label>
+              </li>
+              <li>
+                <input class="country-fieldset__input" id="country-colombia" name="country" type="checkbox" value="colombia">
+                <label class="country-fieldset__label" for="country-colombia">Колумбия</label>
+              </li>
+              <li>
+                <input class="country-fieldset__input" id="country-costa-rica" name="country" type="checkbox" value="costa-rica">
+                <label class="country-fieldset__label" for="country-costa-rica">Коста-Рика</label>
+              </li>
+              <li>
+                <input class="country-fieldset__input" id="country-peru" name="country" type="checkbox" value="peru" disabled>
+                <label class="country-fieldset__label" for="country-peru">Перу</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="form__fieldset button-fieldset">
+            <legend class="form__fieldset-legend visually-hidden">Кнопки применить и очистить</legend>
+            <button class="button-fieldset__button button" type="submit">Применить</button>
+            <button class="button-fieldset__button button button--reset" type="reset">Сбросить</button>
+          </fieldset>
+        </form>
+
+        <div class="catalog__cards-wrapper">,
+
+          <div class="catalog__sort sort">
+            <span class="sort__description">Сортировка:</span>
+            <select class="sort__select" name="catalog__sort">
+              <option class="sort__option" value="default">по умолчанию</option>
+              <option class="sort__option" value="price-asc">по возрастанию цены</option>
+              <option class="sort__option" value="price-desc">по убыванию цены</option>
+              <option class="sort__option" value="popularity">по популярности</option>
+            </select>
+            <span class="sort__arrow"></span>
           </div>
-        </fieldset>
 
-        <fieldset class="form__fieldset milk-fieldset">
-          <legend class="form__fieldset-legend">Наличие молока</legend>
-          <ul>
-            <li>
-              <input class="milk-fieldset__input" id="milk-availability-any" name="milk-availability" type="radio" value="any" required checked>
-              <label class="milk-fieldset__label label" for="milk-availability-any">Неважно</label>
+          <ul class="catalog__cards-list">
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card1">
+                  <img class="card__image" src="images/catalog/deffault-card-image-white@1x.webp" srcset="images/catalog/deffault-card-image-white@2x.webp" alt="Белая дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
             </li>
-            <li>
-              <input class="milk-fieldset__input" id="milk-availability-animal" name="milk-availability" type="radio" value="animal" required>
-              <label class="milk-fieldset__label" for="milk-availability-animal">Только животное</label>
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card2">
+                  <img class="card__image" src="images/catalog/deffault-card-image-blue@1x.webp" srcset="images/catalog/deffault-card-image-blue@2x.webp" alt="Синяя дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
             </li>
-            <li>
-              <input class="milk-fieldset__input" id="milk-availability-plant" name="milk-availability" type="radio" value="plant" required>
-              <label class="milk-fieldset__label" for="milk-availability-plant">Только растительное</label>
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card3">
+                  <img class="card__image" src="images/catalog/deffault-card-image-black@1x.webp" srcset="images/catalog/deffault-card-image-black@2x.webp" alt="Черная дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
             </li>
-            <li>
-              <input class="milk-fieldset__input" id="milk-availability-none" name="milk-availability" type="radio" value="none" disabled required>
-              <label class="milk-fieldset__label" for="milk-availability-none">Без молока</label>
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card4">
+                  <img class="card__image" src="images/catalog/deffault-card-image-pink@1x.webp" srcset="images/catalog/deffault-card-image-pink@2x.webp" alt="Розовая дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
+            </li>
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card5">
+                  <img class="card__image" src="images/catalog/deffault-card-image-brown@1x.webp" srcset="images/catalog/deffault-card-image-brown@2x.webp" alt="Коричневая дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
+            </li>
+            <li class="catalog__cards-item">
+
+              <article class="card">
+                <a class="card__link" href="#card6">
+                  <img class="card__image" src="images/catalog/deffault-card-image-yellow@1x.webp" srcset="images/catalog/deffault-card-image-yellow@2x.webp" alt="Желтая дефолтная банка" width="130" height="188">
+                  <h3 class="card__title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="card__description">Кофе без кофеина из Эфиопии
+                  с натуральным фермерским молоком</p>
+                <div class="card__price-wrapper">
+                  <span class="card__price">225₽</span>
+                  <button class="card__button button" type="button">В корзину</button>
+                </div>
+              </article>
+
             </li>
           </ul>
-        </fieldset>
 
-        <fieldset class="form__fieldset country-fieldset">
-          <legend class="form__fieldset-legend">Страна производитель</legend>
-          <ul>
-            <li>
-              <input class="country-fieldset__input" id="country-brazil" name="country" type="checkbox" value="brazil" required checked>
-              <label class="country-fieldset__label" for="country-brazil">Бразилия</label>
+          <!-- ПОТОМ ЧЕРЕЗ USE tabidex -->
+
+          <ul class="catalog__pagination pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__link" href="#previous">
+                <svg width="6" height="10">
+                  <use href="icons/stack.svg#arrow-bold"></use>
+                </svg>
+                <span class="pagination__link-text">назад</span></a>
             </li>
-            <li>
-              <input class="country-fieldset__input" id="country-ethiopia" name="country" type="checkbox" value="ethiopia">
-              <label class="country-fieldset__label" for="country-ethiopia">Эфиопия</label>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#page1">1</a>
             </li>
-            <li>
-              <input class="country-fieldset__input" id="country-colombia" name="country" type="checkbox" value="colombia">
-              <label class="country-fieldset__label" for="country-colombia">Колумбия</label>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--current" href="#page2" tabide="-1">2</a>
             </li>
-            <li>
-              <input class="country-fieldset__input" id="country-costa-rica" name="country" type="checkbox" value="costa-rica">
-              <label class="country-fieldset__label" for="country-costa-rica">Коста-Рика</label>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#page3">3</a>
             </li>
-            <li>
-              <input class="country-fieldset__input" id="country-peru" name="country" type="checkbox" value="peru" disabled>
-              <label class="country-fieldset__label" for="country-peru">Перу</label>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#next">
+                <svg width="6" height="10">
+                  <use href="icons/stack.svg#arrow-bold"></use>
+                </svg>
+                <span class="pagination__link-text">вперед</span></a>
             </li>
           </ul>
-        </fieldset>
-
-        <fieldset class="form__fieldset button-fieldset">
-          <legend class="form__fieldset-legend visually-hidden">Кнопки применить и очистить</legend>
-          <button class="button-fieldset__button button" type="submit">Применить</button>
-          <button class="button-fieldset__button button--reset" type="reset">Сбросить</button>
-        </fieldset>
-      </form>
-
-      <div class="catalog__wrapper">
-        <div>
-          <span class="catalog-sort-description">Сортировка:</span>
-          <select class="catalog__select" name="catalog__sort">
-            <option value="default">по умолчанию</option>
-            <option value="price-asc">по возрастанию цены</option>
-            <option value="price-desc">по убыванию цены</option>
-            <option value="popularity">по популярности</option>
-          </select>
         </div>
-
-        <ul class="catalog__cards-list">
-          <li class="catalog__cards-item">
-
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-white@1x.webp" srcset="images/catalog/deffault-card-image-white@2x.webp" alt="Белая дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-          <li class="catalog__cards-item">
-
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-blue@1x.webp" srcset="images/catalog/deffault-card-image-blue@2x.webp" alt="Синяя дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-          <li class="catalog__cards-item">
-
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-black@1x.webp" srcset="images/catalog/deffault-card-image-black@2x.webp" alt="Черная дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-          <li class="catalog__cards-item">
-
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-pink@1x.webp" srcset="images/catalog/deffault-card-image-pink@2x.webp" alt="Розовая дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-          <li class="catalog__cards-item">
-
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-brown@1x.webp" srcset="images/catalog/deffault-card-image-brown@2x.webp" alt="Коричневая дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-          <li class="catalog__cards-item">
-            <article class="card">
-              <img class="card__image" src="images/catalog/deffault-card-image-yellow@1x.webp" srcset="images/catalog/deffault-card-image-yellow@2x.webp" alt="Желтая дефолтная банка" width="130" height="188">
-              <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card__description">Кофе без кофеина из Эфиопии
-                с натуральным фермерским молоком</p>
-              <div class="card__price-wrapper">
-                <span class="card__price">225₽</span>
-                <button class="card__button button" type="button">В корзину</button>
-              </div>
-            </article>
-
-          </li>
-        </ul>
-        <!-- ПОТОМ ЧЕРЕЗ USE tabidex-->
-        <ul class="catalog__pagination pagination__list">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#previous"><span class="pagination__link-text">назад</span></a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#page1">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link pagination__link--current" href="#page2">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#page3">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#next"><span class="pagination__link-text">вперед</span></a>
-          </li>
-        </ul>
-
       </div>
+
     </section>
 
     <section class="main__map map" data-test="map">
@@ -441,8 +472,8 @@
     </div>
 
     <div class="footer__copyrights copyrights-wrapper">
-      <span class="copyrights-title">Разработано в </span>
-      <a class="copyrights__link"> HTML Academy
+      <span class="copyrights-title">Разработано в</span>
+      <a class="copyrights__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
         <svg class="copyrights-icon" width="12" height="16">
           <use class="copyrights__logo-image" href="icons/stack.svg#academy-logo" alt="Логотип HTML Academy">
         </svg>

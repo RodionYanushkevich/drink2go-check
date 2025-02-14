@@ -1,0 +1,18 @@
+.button-fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: space-between;
+
+  @media ($viewport-tablet) {
+    column-gap: 20px;
+    flex-direction: row;
+    justify-content: unset;
+  }
+}
+
+.button-fieldset__button {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}

@@ -6,33 +6,30 @@
   column-gap: 20px;
 }
 
-.pagination__item {
-  &:first-child .pagination__link,
-  &:last-child .pagination__link {
+// .pagination__item {
+//   &:first-child .pagination__link,
+//   &:last-child .pagination__link {
 
-    background-position: center center;
-    background-size: 6px 10px;
-    background-repeat: no-repeat;
-    background-image: url("../../icons/arrow.svg");
+//     background-size: 6px 10px;
 
-    @media ($viewport-tablet) {
-      background-image: none;
-    }
-  }
+//     @media ($viewport-tablet) {
+//       background-image: none;
+//     }
+//   }
 
-  &:last-child .pagination__link {
-    transform: rotate(180deg);
+//   &:last-child .pagination__link {
+//     transform: rotate(180deg);
 
-    @media ($viewport-tablet) {
-      transform: rotate(0deg);
-    }
-  }
+//     @media ($viewport-tablet) {
+//       transform: rotate(0deg);
+//     }
+//   }
 
-  & .pagination__link--current {
-    background-color: transparent;
-    color: $base-black;
-  }
-}
+//   & .pagination__link--current {
+//     background-color: transparent;
+//     color: $base-black;
+//   }
+// }
 
 .pagination__link {
   background-color: #ffffff;

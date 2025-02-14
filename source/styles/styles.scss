@@ -5,9 +5,9 @@
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 /* OTHERS */
-@import "./blocks/button.scss";
-@import "./blocks/title.scss";
-@import "./blocks/badge.scss";
+@import "./blocks/others/button.scss";
+@import "./blocks/others/title.scss";
+@import "./blocks/others/badge.scss";
 /* BLOCKS */
 @import "./blocks/page.scss";
 @import "./blocks/main.scss";
@@ -19,12 +19,15 @@
 /* FEATURES */
 @import "./blocks/features.scss";
 /* CATALOG */
-@import "./blocks/catalog.scss";
-@import "./blocks/form.scss";
-@import "./blocks/milk-fieldset.scss";
-@import "./blocks/country-fieldset.scss";
-@import "./blocks/card.scss";
-@import "./blocks/pagination.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/sort.scss";
+@import "./blocks/catalog/card.scss";
+@import "./blocks/catalog/pagination.scss";
+@import "./blocks/catalog/form/form.scss";
+@import "./blocks/catalog/form/price-fieldset.scss";
+@import "./blocks/catalog/form/milk-fieldset.scss";
+@import "./blocks/catalog/form/country-fieldset.scss";
+@import "./blocks/catalog/form/button-fieldset.scss";
 /* MAP */
 /* FOOTER */
 @import "./blocks/footer.scss";

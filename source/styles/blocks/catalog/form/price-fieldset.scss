@@ -1,0 +1,94 @@
+.price-fieldset {
+  padding: 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+
+  @media ($viewport-tablet) {
+    width: 223px;
+  }
+
+  @media ($viewport-desktop) {
+    // width: 223px;
+    // разберись
+    // так быть не должно
+    width: 318px;
+  }
+}
+
+
+.price-fieldset__input-wrapper {
+  max-width: 320px;
+  display: flex;
+  column-gap: 18px;
+  align-items: center;
+
+  @media ($viewport-tablet) {
+    column-gap: 20px;
+  }
+}
+
+.price-fieldset__divider {
+  display: block;
+  width: 8px;
+  height: 2px;
+  background-color: $base-grey;
+}
+
+// padding
+.nouislider-container {
+  padding: 0 10px;
+  display: block;
+  height: 24px;
+  box-sizing: border-box;
+}
+
+.price-fieldset__input {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 10px 8px;
+  max-width: 118px;
+
+  font-family: "Montserrat", "Arial", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+
+  color: $base-black;
+
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+
+  @media ($viewport-tablet) {
+    max-width: 88px;
+  }
+
+  @media ($viewport-desktop) {
+    max-width: 134px;
+  }
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: $base-grey;
+  }
+
+  &:hover,
+  &:focus-visible {
+    border: 2px solid $base-primary;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $primary-darker;
+  }
+
+  &:disabled {
+    color: $light-grey;
+    border: 2px solid $light-grey;
+    pointer-events: none;
+    background-color: $lightest-grey;
+  }
+}
