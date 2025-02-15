@@ -23,9 +23,10 @@
   text-decoration: none;
 
   @media ($viewport-tablet) {
+    padding: 32px 22px;
     width: unset;
     aspect-ratio: unset;
-    padding: 30px 20px;
+    // padding: 30px 20px;
     column-gap: 8px;
   }
 
@@ -43,13 +44,31 @@
 .user-actions__icon {
   width: 16px;
   height: 16px;
-  fill: currentColor; // Цвет иконки будет наследоваться от родителя
+
+
+  @media ($viewport-desktop) {
+    &:hover {
+      color: $base-primary;
+      fill: $base-secondary;
+    }
+
+    &active {
+      color: $base-primary;
+      fill: $base-secondary;
+    }
+  }
 }
 
 .user-actions__description {
   display: none;
 
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+
   @media ($viewport-desktop) {
-    display: inline-block; // Показываем текст только на десктопе
+    display: inline-block;
   }
 }

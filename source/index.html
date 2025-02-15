@@ -9,19 +9,23 @@
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <script src="scripts/index.js" defer></script>
-  <script src="scripts/nav-toggle.js" defer></script>
   <script src="vendor/nouislider/nouislider.js"></script>
 </head>
 
 <body class="page__body" data-test="header">
   <header class="header">
-    <a class="header__logo-link" href="index.html">
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
-        <img class="header__logo-image logo-image" src="images/logo-mobile.svg" alt="Логотип Drink2Go" width="32" height="36">
-      </picture>
-    </a>
+
+    <div class="header__wrapper">
+      <a class="header__logo-link" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="170" height="36">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="82" height="36">
+          <img class="header__logo-image logo-image" src="images/logo-mobile.svg" alt="Логотип Drink2Go" width="32" height="36">
+        </picture>
+      </a>
+      <h1 class="header__title visually-hidden--mobile">Интернет-магазин
+        кофейных напитков</h1>
+    </div>
 
     <!-- личный кабинет -->
     <ul class="user-actions__list">
@@ -60,7 +64,7 @@
     <!-- HERO -->
     <section class="main__hero hero" data-test="hero">
 
-      <h1 class="visually-hidden">Кофейные напитки Drink2Go</h1>
+      <h2 class="visually-hidden">Кофейные напитки Drink2Go</h2>
       <div class="hero__slider">
         <span class="visually-hidden hero__slider-arrow"></span>
         <span class="visually-hidden hero__slider-arrow"></span>
@@ -351,20 +355,20 @@
 
           <ul class="catalog__pagination pagination__list">
             <li class="pagination__item">
-              <a class="pagination__link" href="#previous">
+              <a class="pagination__link" href="#prev">
                 <svg class="pagination__icon" width="6" height="10">
                   <use href="icons/stack.svg#arrow-bold"></use>
                 </svg>
                 <span class="pagination__link-text">Назад</span></a>
             </li>
             <li class="pagination__item pagination__item--current">
-              <a class="pagination__link" href="#page1">1</a>
+              <a class="pagination__link" href="#1">1</a>
             </li>
             <li class="pagination__item ">
-              <a class="pagination__link pagination__link" href="#page2" tabide="-1">2</a>
+              <a class="pagination__link" href="#2" tabidex="-1">2</a>
             </li>
             <li class="pagination__item">
-              <a class="pagination__link" href="#page3">3</a>
+              <a class="pagination__link" href="#3">3</a>
             </li>
             <li class="pagination__item">
               <a class="pagination__link" href="#next">
@@ -433,7 +437,7 @@
     <nav class="footer__nav footer-navigation">
       <ul class="footer-navigation__list">
         <li class="footer-navigation__item">
-          <h3 class="footer-navigation__title footer__title">Интернет-магазин</h3>
+          <h2 class="footer-navigation__title footer__title">Интернет-магазин</h2>
           <ul class="footer-navigation__link-list">
             <li class="footer-navigation__link-item">
               <a class="footer-navigation__link" href="#">Каталог</a>
@@ -450,7 +454,7 @@
           </ul>
         </li>
         <li class="footer-navigation__item">
-          <h3 class="footer-navigation__title footer__title">Медиа</h3>
+          <h2 class="footer-navigation__title footer__title">Медиа</h2>
           <ul class="footer-navigation__link-list">
             <li class="footer-navigation__link-item">
               <a class="footer-navigation__link" href="#">Блог</a>
@@ -467,7 +471,7 @@
     </nav>
 
     <div class="footer__contacts contacts">
-      <h3 class="contacts__title footer__title">Контакты</h3>
+      <h2 class="contacts__title footer__title">Контакты</h2>
       <ul class="contacts__list">
         <li class="contacts__item contacts__item--address">
           <address class="contacts__address">Санкт-Петербург, набережная реки Карповки, дом 5</address>
