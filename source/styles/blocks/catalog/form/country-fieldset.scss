@@ -2,7 +2,11 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  padding: 20px 0 30px;
+  padding: 20px 0 29px;
+
+  @media ($viewport-desktop) {
+    padding: 20px 0 40px;
+  }
 }
 
 .country-fieldset__label {

@@ -3,7 +3,7 @@
   box-sizing: border-box;
 
   @media ($viewport-tablet) {
-    padding: 60px 20px 100px;
+    padding: 60px 20px 99px;
   }
 
   @media ($viewport-desktop) {
@@ -12,7 +12,7 @@
 }
 
 .features__title {
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 
   @media ($viewport-tablet) {
     padding-bottom: 60px;
@@ -41,7 +41,8 @@
   @media ($viewport-desktop) {
     padding: 0;
     flex-flow: row;
-    column-gap: 30px;
+    justify-content: space-between;
+    // column-gap: 30px;
   }
 }
 
@@ -69,7 +70,7 @@
   }
 
 
-  @media ($viewport-tablet) {
+  @media ($viewport-desktop) {
     padding: 76px 0 0;
     background-position: center top;
     text-align: center;
@@ -110,9 +111,24 @@
 
 .features__list-description {
   margin: 0;
+  padding: 0;
+  width: 280px;
+
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  text-align: center;
 
   @media ($viewport-tablet) {
     font-size: 16px;
     line-height: 150%;
+    text-align: start;
+  }
+
+  @media ($viewport-desktop) {
+    min-width: 317px;
+    text-align: center;
+    width: unset;
   }
 }

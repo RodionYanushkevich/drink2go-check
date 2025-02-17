@@ -1,32 +1,37 @@
-.social__icon {
-  color: $base-grey;
-}
+
 
 .social__list {
   display: flex;
   justify-content: space-between;
   column-gap: 20px;
-  padding: 10px;
+  padding: 10px 0;
   margin: 0;
   flex-wrap: wrap;
   list-style: none;
+
+  @media ($viewport-desktop) {
+    flex-grow: 1;
+    gap: 20px;
+    align-items: center;
+    padding: 5px 0 0;
+  }
 }
 
 .social__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  // padding: 10px;
-  border-radius: 4px;
   width: 40px;
   aspect-ratio: 1;
+
+  border-radius: 4px;
 
   &:hover {
     outline: none;
     background: $base-secondary;
   }
 
-  &:active {/* State=Active */
+  &:active {
     background: rgba(120, 89, 207, 0.25);
   }
 
@@ -41,3 +46,6 @@
   }
 }
 
+.social__icon {
+  color: $base-grey;
+}

@@ -5,23 +5,30 @@
   // padding: 20px 0;
 
   @media ($viewport-tablet) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    // column-gap: 30px;
+    display: flex;
+    column-gap: 67px;
+    // grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ($viewport-tablet) {
+    column-gap: 185px;
   }
 }
 
 .footer-navigation__item {
-  // padding: 0 20px 19px;
   display: flex;
   flex-direction: column;
   row-gap: 12px;
-  padding: 20px 20px 19px;
-
+  padding: 21px 20px 20px;
   border-bottom: 1px solid $base-secondary;
 
   @media ($viewport-tablet) {
     border: none;
+    padding: 10px 20px 20px;
+  }
+
+  @media ($viewport-desktop) {
+    padding: 10px 8px 20px;
   }
 }
 

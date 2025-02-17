@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0;
   column-gap: 20px;
+
+  @media ($viewport-tablet) {
+
+    column-gap: 20px;
+  }
 }
 
 .pagination__icon--rotate {
@@ -34,22 +39,19 @@
   box-sizing: border-box;
 
 
-  border-radius: 4px;
-
   font-size: 16px;
   line-height: 150%;
   text-align: center;
   text-decoration: none;
 
   color: $base-primary;
-
+  border-radius: 4px;
 
   &:hover,
   &:focus-visible {
     color: $base-white;
     background-color: $primary-lighter;
   }
-
 
   &:active {
     background-color: $primary-darker;
@@ -90,7 +92,7 @@
 
   @media ($viewport-tablet) {
     display: inline;
-    padding: 8px 20px;
+    padding: 8px 12px;
   }
 }
 

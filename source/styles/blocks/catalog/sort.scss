@@ -1,10 +1,11 @@
 .sort {
-  width: 280px;
+  width: 278px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  // padding: 0 0 0 4px;
   column-gap: 8px;
   align-self: end;
 }

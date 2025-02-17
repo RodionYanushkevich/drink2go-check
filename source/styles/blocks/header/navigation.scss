@@ -6,6 +6,12 @@
     align-items: center;
     // column-gap: 60px;
   }
+
+  @media ($viewport-desktop) {
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+  }
 }
 
 .navigation__list {
@@ -19,6 +25,11 @@
 
   @media ($viewport-tablet) {
     display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($viewport-desktop) {
+    gap: 20px;
   }
 }
 
@@ -48,6 +59,7 @@
     border-bottom: none;
     background-color: transparent;
   }
+
 
   &:hover,
   :focus-visible {

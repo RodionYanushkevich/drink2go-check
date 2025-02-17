@@ -5,7 +5,7 @@
   background-color: $lightest-grey;
 
   @media ($viewport-tablet) {
-    padding: 80px 20px 90px;
+    padding: 80px 20px 89px;
   }
 
   @media ($viewport-desktop) {
@@ -28,17 +28,20 @@
   row-gap: 20px;
   grid-template-columns: 1fr;
   margin: 0;
-  padding: 20px 0 40px;
+  // padding: 20px 0 40px;
+  padding: 15px 0 40px;
+
   list-style: none;
 
   @media ($viewport-tablet) {
-    padding: 30px 0 70px;
+    padding: 25px 0 71px;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 31px 30px;
+    align-self: center;
   }
 
   @media ($viewport-desktop) {
-    padding: 30px 0 60px;
+    padding: 26px 0 60px;
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -49,6 +52,11 @@
   align-items: end;
 }
 
+.catalog__sort {
+  @media ($viewport-desktop) {
+    padding: 35px 0 0;
+  }
+}
 // .catalog__select {
 //   appearance: none;
 //   box-sizing: border-box;

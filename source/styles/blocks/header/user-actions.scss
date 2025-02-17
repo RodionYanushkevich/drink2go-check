@@ -8,6 +8,10 @@
   @media ($viewport-tablet) {
     order: 3;
   }
+
+  @media ($viewport-desktop) {
+    gap: 21px;
+  }
 }
 
 .user-actions__link {
@@ -27,6 +31,10 @@
     width: unset;
     aspect-ratio: unset;
     // padding: 30px 20px;
+  }
+
+  @media ($viewport-desktop) {
+    padding: 30px 20px;
     column-gap: 8px;
   }
 
