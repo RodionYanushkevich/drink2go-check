@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 0 0 20px;
-  // flex-wrap: wrap;
 
   box-sizing: border-box;
 
@@ -22,8 +21,7 @@
 }
 
 .header__logo-link {
-  // margin-right: auto;
-
+  &:focus-visible,
   &:hover {
     outline: none;
     opacity: 0.9;

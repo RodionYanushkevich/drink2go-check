@@ -6,7 +6,7 @@
   column-gap: 20px;
 
   @media ($viewport-tablet) {
-
+    min-width: 394px;
     column-gap: 20px;
   }
 }
@@ -92,6 +92,13 @@
 
 .pagination__item:nth-child(2) {
   order: -1;
+
+  @media ($viewport-tablet) {
+    & .pagination__link {
+      height: 40;
+      aspect-ratio: unset;
+    }
+  }
 }
 
 .pagination__item:first-child.pagination__item--current + .pagination__item:nth-child(2) {

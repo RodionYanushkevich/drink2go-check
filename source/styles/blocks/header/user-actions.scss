@@ -23,6 +23,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
   color: $base-black;
   text-decoration: none;
 
@@ -30,7 +31,6 @@
     padding: 32px 22px;
     width: unset;
     aspect-ratio: unset;
-    // padding: 30px 20px;
   }
 
   @media ($viewport-desktop) {
@@ -40,6 +40,7 @@
 
   &:hover,
   &:focus-visible {
+    outline: none;
     color: $base-primary;
   }
 

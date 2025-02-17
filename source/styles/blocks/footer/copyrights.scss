@@ -37,13 +37,13 @@
     line-height: 133%;
   }
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     color: $base-primary;
     outline: none;
   }
 
   &:active {
-
     color: $primary-darker;
   }
 }

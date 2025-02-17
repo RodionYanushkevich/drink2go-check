@@ -17,6 +17,8 @@
   border: none;
   border-radius: 4px;
 
+  -webkit-tap-highlight-color: transparent;
+
   cursor: pointer;
 
   &:hover,
@@ -38,8 +40,4 @@
 .button--reset {
   color: $base-primary;
   background-color: #ffffff;
-  // &:hover,
-  // &:focus-visible {
-
-  // }
 }
