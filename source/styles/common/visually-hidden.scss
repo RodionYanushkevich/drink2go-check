@@ -9,7 +9,7 @@
   overflow: hidden;
 }
 
-.visually-hidden--mobile {
+.visually-hidden-mobile {
   @media (max-width: 1439px) {
     position: absolute;
     width: 1px;

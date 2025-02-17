@@ -1,4 +1,4 @@
-.pagination__list {
+.pagination {
   display: flex;
   list-style: none;
   margin: 0;
@@ -20,11 +20,6 @@
     display: none;
   }
 }
-
-// .pagination__icon use {
-//   color: yellowgreen;
-//   fill: currentColor;
-// }
 
 .pagination__link {
   background-color: #ffffff;
@@ -88,7 +83,6 @@
   font-size: 16px;
   line-height: 150%;
   text-align: center;
-  // color: $base-primary;
 
   @media ($viewport-tablet) {
     display: inline;
@@ -96,7 +90,22 @@
   }
 }
 
+.pagination__item:nth-child(2) {
+  order: -1;
+}
 
-// .pagination__item--current ~ .pagination__item:first-child {
-//   display: none;
-// }
+.pagination__item:first-child.pagination__item--current + .pagination__item:nth-child(2) {
+  display: none;
+}
+
+.pagination__item:nth-last-child(2).pagination__item--current {
+  margin-right: 60px;
+
+  @media ($viewport-tablet) {
+    margin-right: 124px;
+  }
+}
+
+.pagination__item:nth-last-child(2).pagination__item--current + .pagination__item:last-child {
+  display: none;
+}

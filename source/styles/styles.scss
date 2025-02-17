@@ -8,9 +8,10 @@
 @import "./blocks/others/button.scss";
 @import "./blocks/others/title.scss";
 @import "./blocks/others/badge.scss";
+@import "../vendor/nouislider/nouislider.css";
 /* BLOCKS */
-@import "./blocks/page.scss";
-@import "./blocks/main.scss";
+@import "./blocks/page/page.scss";
+@import "./blocks/main/main.scss";
 @import "./blocks/header/header.scss";
 @import "./blocks/header/navigation.scss";
 @import "./blocks/header/user-actions.scss";
@@ -30,6 +31,7 @@
 @import "./blocks/catalog/form/country-fieldset.scss";
 @import "./blocks/catalog/form/button-fieldset.scss";
 /* MAP */
+@import "./blocks/catalog/map/map.scss";
 /* FOOTER */
 @import "./blocks/footer/footer.scss";
 @import "./blocks/footer/social.scss";

@@ -13,13 +13,13 @@
   }
 
   @media ($viewport-desktop) {
-    width: unset;
-  }
-
-  @media ($viewport-desktop) {
-    background-image: unset;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
     background-color: $flat-white;
+    background-image: unset;
   }
 }
 

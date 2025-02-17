@@ -10,7 +10,7 @@
     // grid-template-columns: repeat(2, 1fr);
   }
 
-  @media ($viewport-tablet) {
+  @media ($viewport-desktop) {
     column-gap: 185px;
   }
 }
