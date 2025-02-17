@@ -1,0 +1,132 @@
+.navigation {
+  display: flex;
+
+  @media ($viewport-tablet) {
+    justify-content: space-between;
+    align-items: center;
+    // column-gap: 60px;
+  }
+
+  @media ($viewport-desktop) {
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+  }
+}
+
+.navigation__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  order: 2;
+
+  @media ($viewport-tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($viewport-desktop) {
+    gap: 20px;
+  }
+}
+
+.navigation__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 21px;
+  box-sizing: border-box;
+
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 133%;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  color: $base-black;
+
+
+  background-color: $base-white;
+  border-bottom: 1px solid $base-secondary;
+
+
+  @media ($viewport-tablet) {
+    padding: 32px 20px;
+    border-bottom: none;
+    background-color: transparent;
+  }
+
+
+  &:hover,
+  :focus-visible {
+    color: $base-primary;
+  }
+
+  &:active {
+    background-color: $base-secondary;
+    color: $base-primary;
+  }
+}
+
+.navigation__link[href="index.html"] {
+  border-top: 1px solid $base-secondary;
+
+  @media ($viewport-tablet) {
+    border-top: none;
+  }
+}
+
+.navigation__link--current {
+  color: $base-primary;
+
+  @media ($viewport-tablet) {
+    border-bottom: 2px solid $base-primary;
+    padding-bottom: 30px;
+  }
+}
+
+
+.navigation__button {
+  display: block;
+  width: 60px;
+  aspect-ratio: 1;
+
+  border: none;
+
+  cursor: pointer;
+  background-image: url("../../icons/burger.svg");
+  background-repeat: no-repeat;
+  background-size: 16px 12px;
+  background-position: center center;
+  background-color: transparent;
+
+  @media ($viewport-tablet) {
+    display: none;
+  }
+  // &:hover,
+  // :focus-visible {
+  //   background-color: $base-secondary;
+  // }
+
+  &:active {
+    background-color: $base-secondary;
+  }
+}
+
+
+.navigation__list--open {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.navigation__button--cross {
+  background-image: url("../../icons/cross.svg");
+}

@@ -1,0 +1,474 @@
+report({
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__0_desktop.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.5199652777777778,
+          "misMatchPercentage": "0.52",
+          "analysisTime": 51
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__1_tablet.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.1165364583333333,
+          "misMatchPercentage": "1.12",
+          "analysisTime": 34
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"header\"]",
+        "fileName": "drink2gotest-06_0_index_header_TEST-06_PP_0__2_mobile.png",
+        "label": "index header TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.375,
+          "misMatchPercentage": "0.38",
+          "analysisTime": 42
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__0_desktop.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.21426626206037971,
+          "misMatchPercentage": "0.21",
+          "analysisTime": 215
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__1_tablet.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.5302687198067633,
+          "misMatchPercentage": "0.53",
+          "analysisTime": 258
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"hero\"]",
+        "fileName": "drink2gotest-06_1_index_hero_TEST-06_PP_0__2_mobile.png",
+        "label": "index hero TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.5357278963414633,
+          "misMatchPercentage": "2.54",
+          "analysisTime": 73
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__0_desktop.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.4032541115122343,
+          "misMatchPercentage": "0.40",
+          "analysisTime": 246
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__1_tablet.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.0069444444444444,
+          "misMatchPercentage": "1.01",
+          "analysisTime": 155
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"features\"]",
+        "fileName": "drink2gotest-06_2_index_features_TEST-06_PP_0__2_mobile.png",
+        "label": "index features TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.0071369179600886,
+          "misMatchPercentage": "1.01",
+          "analysisTime": 111
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__0_desktop.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.06228898096992,
+          "misMatchPercentage": "1.06",
+          "analysisTime": 190
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__1_tablet.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.1022439196401341,
+          "misMatchPercentage": "1.10",
+          "analysisTime": 159
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"catalog\"]",
+        "fileName": "drink2gotest-06_3_index_catalog_TEST-06_PP_0__2_mobile.png",
+        "label": "index catalog TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.6358045212765957,
+          "misMatchPercentage": "0.64",
+          "analysisTime": 121
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__0_desktop.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.009387860082304527,
+          "misMatchPercentage": "0.01",
+          "analysisTime": 108
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__1_tablet.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0,
+          "misMatchPercentage": "0.00",
+          "analysisTime": 146
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"map\"]",
+        "fileName": "drink2gotest-06_4_index_map_TEST-06_PP_0__2_mobile.png",
+        "label": "index map TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 1,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0,
+          "misMatchPercentage": "0.00",
+          "analysisTime": 27
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__0_desktop.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.5702861952861953,
+          "misMatchPercentage": "0.57",
+          "analysisTime": 82
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__1_tablet.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "tablet",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.2995216259057973,
+          "misMatchPercentage": "2.30",
+          "analysisTime": 124
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\bitmaps_reference\\test-06\\drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "test": "..\\bitmaps_test\\20250217-235043\\drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "selector": "[data-test=\"footer\"]",
+        "fileName": "drink2gotest-06_5_index_footer_TEST-06_PP_0__2_mobile.png",
+        "label": "index footer TEST-06. PP.",
+        "requireSameDimensions": false,
+        "misMatchThreshold": 3,
+        "url": "http://localhost:3000/index.html",
+        "referenceUrl": "./figma/index.html",
+        "expect": 0,
+        "viewportLabel": "mobile",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 1.083393371757925,
+          "misMatchPercentage": "1.08",
+          "analysisTime": 76
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "drink2go test-06"
+});

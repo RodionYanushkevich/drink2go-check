@@ -5,27 +5,36 @@
 @import "./common/global.scss";
 @import "./common/visually-hidden.scss";
 /* OTHERS */
-@import "./blocks/button.scss";
-@import "./blocks/title.scss";
-@import "./blocks/badge.scss";
+@import "./blocks/others/button.scss";
+@import "./blocks/others/title.scss";
+@import "./blocks/others/badge.scss";
+@import "../vendor/nouislider/nouislider.css";
 /* BLOCKS */
-@import "./blocks/page.scss";
-@import "./blocks/main.scss";
-@import "./blocks/header.scss";
-@import "./blocks/navigation.scss";
+@import "./blocks/page/page.scss";
+@import "./blocks/main/main.scss";
+@import "./blocks/header/header.scss";
+@import "./blocks/header/navigation.scss";
+@import "./blocks/header/user-actions.scss";
 /* HERO */
-@import "./blocks/hero.scss";
-@import "./blocks/hero-card.scss";
+@import "./blocks/hero/hero.scss";
+@import "./blocks/hero/hero-card.scss";
 /* FEATURES */
-@import "./blocks/features.scss";
+@import "./blocks/features/features.scss";
 /* CATALOG */
-@import "./blocks/catalog.scss";
-@import "./blocks/form.scss";
-@import "./blocks/card.scss";
-@import "./blocks/pagination.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/sort.scss";
+@import "./blocks/catalog/card.scss";
+@import "./blocks/catalog/pagination.scss";
+@import "./blocks/catalog/form/form.scss";
+@import "./blocks/catalog/form/price-fieldset.scss";
+@import "./blocks/catalog/form/milk-fieldset.scss";
+@import "./blocks/catalog/form/country-fieldset.scss";
+@import "./blocks/catalog/form/button-fieldset.scss";
 /* MAP */
+@import "./blocks/catalog/map/map.scss";
 /* FOOTER */
-@import "./blocks/footer.scss";
-@import "./blocks/footer-navigation.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/copyrights.scss";
+@import "./blocks/footer/footer.scss";
+@import "./blocks/footer/social.scss";
+@import "./blocks/footer/footer-navigation.scss";
+@import "./blocks/footer/contacts.scss";
+@import "./blocks/footer/copyrights.scss";

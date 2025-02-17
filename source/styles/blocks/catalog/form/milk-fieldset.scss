@@ -1,0 +1,64 @@
+.milk-fieldset {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px 0 30px;
+}
+
+.milk-fieldset__label {
+  display: flex;
+  column-gap: 10px;
+
+  &:hover::before,
+  &:focus-visible::before {
+    background-color: rgba(120, 89, 207, 0.25);
+    border: 2px solid $primary-lighter;
+    outline-offset: -4px;
+    outline: 2px solid #ffffff;
+  }
+}
+
+.milk-fieldset__label::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  background: #ffffff;
+
+  border: 2px solid $base-grey;
+  // outline-offset: -2px;
+  // outline: 2px solid $base-grey;
+  // &:hover::before,
+  // &:focus-visible::before {
+  //   background-color: rgba(120, 89, 207, 0.25);
+  //   border: 2px solid $primary-lighter;
+  //   outline-offset: -4px;
+  //   outline: 2px solid #ffffff;
+  // }
+}
+
+.milk-fieldset__input {
+  &:checked + .milk-fieldset__label::before {
+    background-color: $base-primary;
+    border: 2px solid $base-primary;
+    outline-offset: -4px;
+    outline: 2px solid #ffffff;
+  }
+
+  &:disabled + .milk-fieldset__label {
+    color: $base-grey;
+    pointer-events: none;
+  }
+
+  &:disabled + .milk-fieldset__label::before {
+    border: 2px solid $light-grey;
+  }
+
+  &:disabled:checked + .milk-fieldset__label::before {
+    border: 2px solid $light-grey;
+    background-color: $light-grey;
+  }
+}
