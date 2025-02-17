@@ -1,6 +1,7 @@
 .hero {
   width: 320px;
-  padding: 0 20px;
+  display: flex;
+  // padding: 0 20px;
   box-sizing: border-box;
   background-color: $flat-white;
 
@@ -27,4 +28,21 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.hero__slider-arrow {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0 5px 0 4px;
+  justify-content: center;
+  height: 100%;
+
+  border: none;
+  background-color: transparent;
+}
+
+.hero__slider-arrow:nth-child(2) {
+  order: 2;
+  transform: scale(-1);
 }

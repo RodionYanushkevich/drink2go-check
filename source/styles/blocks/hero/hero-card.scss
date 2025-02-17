@@ -96,11 +96,14 @@
   }
 
   & br {
+    display: none;
+
     @media ($viewport-tablet) {
       display: inline-block;
     }
   }
 }
+
 
 .hero-card__prise-wrapper {
   display: flex;

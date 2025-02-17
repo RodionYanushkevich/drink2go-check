@@ -63,70 +63,78 @@
     <section class="main__hero hero" data-test="hero">
 
       <h2 class="visually-hidden">Кофейные напитки Drink2Go</h2>
-      <div class="hero__slider">
-        <span class="visually-hidden hero__slider-arrow"></span>
-        <span class="visually-hidden hero__slider-arrow"></span>
 
-        <ul class="hero__slider-cards hero__cards-list">
-          <li class="hero__cards-item">
+      <button class="hero__slider-arrow"> <span class="visually-hidden">предыдущий слайд</span>
+        <svg class="hero__arrow-icon" width="11" height="20">
+          <use href="icons/stack.svg#arrow"></use>
+        </svg>
+      </button>
+      <button class="hero__slider-arrow"> <span class="visually-hidden">предыдущий слайд</span>
+        <svg class="hero__arrow-icon" width="11" height="20">
+          <use href="icons/stack.svg#arrow"></use>
+        </svg>
+      </button>
 
-            <div class="hero-card">
-              <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-flat-desktop@1x.webp 1x, images/hero/hero-flat-desktop@2x.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-flat-tablet@1x.webp 1x, images/hero/hero-flat-tablet@2x.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/hero/hero-flat-mobile@1x.webp" srcset="images/hero/hero-flat-mobile@2x.webp" alt="Декаф Флэт Уайт" width="280" height="280">
-              </picture>
-              <span class="hero-card__new badge">Новинка!</span>
-              <h3 class="hero-card__title">Декаф Флэт Уайт</h3>
-              <p class="hero-card__description">Свежесваренный кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-              <div class="hero-card__prise-wrapper">
-                <span class="hero-card__price"><del>295₽</del> 225₽</span>
-                <a class="hero-card__button button" href="#">Заказать</a>
-              </div>
+      <!-- <div class="hero__slider"> -->
+      <ul class="hero__slider-cards hero__cards-list">
+        <li class="hero__cards-item">
+
+          <div class="hero-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-flat-desktop@1x.webp 1x, images/hero/hero-flat-desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-flat-tablet@1x.webp 1x, images/hero/hero-flat-tablet@2x.webp 2x" width="476" height="476">
+              <img class="hero-card__image" src="images/hero/hero-flat-mobile@1x.webp" srcset="images/hero/hero-flat-mobile@2x.webp" alt="Декаф Флэт Уайт" width="280" height="280">
+            </picture>
+            <span class="hero-card__new badge">Новинка!</span>
+            <h3 class="hero-card__title">Декаф Флэт Уайт</h3>
+            <p class="hero-card__description">Свежесваренный кофе без кофеина из Эфиопии <br>с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+            <div class="hero-card__prise-wrapper">
+              <span class="hero-card__price"><del>295₽</del> 225₽</span>
+              <a class="hero-card__button button" href="#">Заказать</a>
             </div>
+          </div>
 
-          </li>
-          <li class="hero__cards-item visually-hidden">
+        </li>
+        <li class="hero__cards-item visually-hidden">
 
-            <div class="hero-card">
-              <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-lavender-desktop@1x.webp 1x, images/hero/hero-lavender-desktop@2x.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-lavender-tablet@1x.webp 1x, images/hero/hero-lavender-tablet@2x.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/hero/hero-lavender-mobile@1x.webp" srcset="images/hero/hero-lavender-mobile@2x.webp" alt="Лавандовый Латте" width="280" height="280">
-              </picture>
+          <div class="hero-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-lavender-desktop@1x.webp 1x, images/hero/hero-lavender-desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-lavender-tablet@1x.webp 1x, images/hero/hero-lavender-tablet@2x.webp 2x" width="476" height="476">
+              <img class="hero-card__image" src="images/hero/hero-lavender-mobile@1x.webp" srcset="images/hero/hero-lavender-mobile@2x.webp" alt="Лавандовый Латте" width="280" height="280">
+            </picture>
 
-              <span class="hero-card__new">Новинка!</span>
-              <h3 class="hero-card__title badge">Лавандовый Латте</h3>
-              <p class="hero-card__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом уне сёт вас прямо на вершину Радужных гор</p>
-              <div class="hero-card__prise-wrapper">
-                <span class="hero-card__price"><del>285₽</del> 265₽</span>
-                <a class="hero-card__button button" href="#">Заказать</a>
-              </div>
+            <span class="hero-card__new">Новинка!</span>
+            <h3 class="hero-card__title badge">Лавандовый Латте</h3>
+            <p class="hero-card__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом уне сёт вас прямо на вершину Радужных гор</p>
+            <div class="hero-card__prise-wrapper">
+              <span class="hero-card__price"><del>285₽</del> 265₽</span>
+              <a class="hero-card__button button" href="#">Заказать</a>
             </div>
-          </li>
-          <li class="hero__cards-item visually-hidden">
+          </div>
+        </li>
+        <li class="hero__cards-item visually-hidden">
 
-            <div class="hero-card">
-              <picture>
-                <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-espresso-desktop@1x.webp 1x, images/hero/hero-espresso-desktop@2x.webp 2x" width="600" height="600">
-                <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-espresso-tablet@1x.webp 1x, images/hero/hero-espresso-tablet@2x.webp 2x" width="476" height="476">
-                <img class="hero-card__image" src="images/hero/hero-espresso-mobile@1x.webp" srcset="images/hero/hero-espresso-mobile@2x.webp" alt="Тройной Эспрессо" width="280" height="280">
-              </picture>
-              <span class="hero-card__new badge">Новинка!</span>
-              <h3 class="hero-card__title">Тройной Эспрессо</h3>
-              <p class="hero-card__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
-              <div class="hero-card__prise-wrapper">
-                <span class="hero-card__price"><del>395₽</del> 375₽</span>
-                <a class="hero-card__button button" href="#">Заказать</a>
-              </div>
+          <div class="hero-card">
+            <picture>
+              <source type="image/webp" media="(min-width:1440px)" srcset="images/hero/hero-espresso-desktop@1x.webp 1x, images/hero/hero-espresso-desktop@2x.webp 2x" width="600" height="600">
+              <source type="image/webp" media="(min-width:768px)" srcset="images/hero/hero-espresso-tablet@1x.webp 1x, images/hero/hero-espresso-tablet@2x.webp 2x" width="476" height="476">
+              <img class="hero-card__image" src="images/hero/hero-espresso-mobile@1x.webp" srcset="images/hero/hero-espresso-mobile@2x.webp" alt="Тройной Эспрессо" width="280" height="280">
+            </picture>
+            <span class="hero-card__new badge">Новинка!</span>
+            <h3 class="hero-card__title">Тройной Эспрессо</h3>
+            <p class="hero-card__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+            <div class="hero-card__prise-wrapper">
+              <span class="hero-card__price"><del>395₽</del> 375₽</span>
+              <a class="hero-card__button button" href="#">Заказать</a>
             </div>
-          </li>
+          </div>
+        </li>
 
-        </ul>
-      </div>
+      </ul>
+      <!-- </div> -->
     </section>
 
-    <!-- ПРЕИМУЩЕСТВА -->
     <section class="main__features features" data-test="features">
 
       <p class="features__badge badge">Преимущества</p>
@@ -153,9 +161,7 @@
         </li>
       </ul>
     </section>
-    <!-- КАТАЛОГ -->
     <section class="main__catalog catalog" data-test="catalog">
-      <!-- h4 переделай -->
       <p class="catalog__description badge">Каталог</p>
       <h2 class="catalog__title title">Каталог кофейных напитков</h2>
 
