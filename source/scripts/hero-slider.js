@@ -15,8 +15,9 @@ const updateSlider = () => {
     slide.style.display = (index === slideIndex) ? 'grid' : 'none';
   });
 
-  if (window.innerWidth <= 320 || window.innerWidth >= 1440) {
+  if (window.innerWidth < 768 || window.innerWidth >= 1440) {
     heroContainer.style.backgroundColor = BACKGROUNDS[slideIndex];
+    heroContainer.style.backgroundImage = 'unset';
   }
   if (window.innerWidth >= 768 && window.innerWidth < 1440) {
     heroContainer.style.backgroundColor = 'transparent';
