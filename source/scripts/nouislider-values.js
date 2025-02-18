@@ -10,14 +10,14 @@ const createSlider = () => {
     start: [0, 900],
     connect: [false, true, false],
     range: {
-      min: 0,
+      min: -20,
       max: 1020,
     },
     step: 1,
-    padding: [0, 20],
+    padding: [20, 20],
     format:{
       to: function (value) {
-        return Math.round(value); // Округляем до целого числа
+        return Math.round(value);
       },
       from: function (value) {
         return parseFloat(value);
@@ -33,4 +33,3 @@ slider.noUiSlider.on('update', (values) => {
 });
 
 minPriceInput.value = '';
-// maxPriceInput.value = '900';

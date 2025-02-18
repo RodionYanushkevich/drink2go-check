@@ -14,7 +14,6 @@
     padding: 39px 0 0;
 
     display: block;
-    // flex-direction: column;
   }
 }
 
@@ -22,7 +21,6 @@
   @media ($viewport-tablet) {
     grid-row: 2/3;
     grid-column: 1/-1;
-    // justify-self: center;
   }
 }
 
@@ -31,10 +29,9 @@
   padding: 0;
   border: 0;
 }
-// ПО БЭМ ПОТОМ КУДА НИТЬЬ
+
 .form__fieldset-legend {
   padding: 0;
-  // padding-top: 20px;
 
   font-weight: 600;
   font-size: 16px;
@@ -42,13 +39,10 @@
 
   color: #333333;
 }
-// перепеши на каждую
+
 .form__fieldset:not(:first-child) input {
   display: none;
 }
-// .form__fieldset input {
-//   display: none;
-// }
 
 .form__fieldset label {
   font-weight: 400;

@@ -10,9 +10,6 @@
   }
 
   @media ($viewport-desktop) {
-    // width: 223px;
-    // разберись
-    // так быть не должно
     width: 318px;
   }
 }
@@ -48,18 +45,19 @@
   }
 }
 
-// padding
 .price-fieldset__nouislider {
-  padding: 0 10px;
+  padding: 0;
   display: block;
   height: 24px;
   box-sizing: border-box;
 
   @media ($viewport-tablet) {
+    padding: 0 10px 0 0;
     height: 20px;
   }
 
   @media ($viewport-desktop) {
+    padding: 0;
     height: 22;
   }
 }
@@ -83,6 +81,14 @@
 
   border: 2px solid $primary-lighter;
   border-radius: 4px;
+
+  appearance: textfield;
+
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
 
   @media ($viewport-tablet) {
     max-width: 88px;

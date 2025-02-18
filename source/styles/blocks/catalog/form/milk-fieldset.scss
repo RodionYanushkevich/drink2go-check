@@ -9,6 +9,8 @@
   display: flex;
   column-gap: 10px;
 
+  -webkit-tap-highlight-color: transparent;
+
   &:hover::before,
   &:focus-visible::before {
     background-color: rgba(120, 89, 207, 0.25);
@@ -29,15 +31,6 @@
   background: #ffffff;
 
   border: 2px solid $base-grey;
-  // outline-offset: -2px;
-  // outline: 2px solid $base-grey;
-  // &:hover::before,
-  // &:focus-visible::before {
-  //   background-color: rgba(120, 89, 207, 0.25);
-  //   border: 2px solid $primary-lighter;
-  //   outline-offset: -4px;
-  //   outline: 2px solid #ffffff;
-  // }
 }
 
 .milk-fieldset__input {

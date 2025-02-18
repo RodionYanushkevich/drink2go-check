@@ -4,7 +4,6 @@
   @media ($viewport-tablet) {
     justify-content: space-between;
     align-items: center;
-    // column-gap: 60px;
   }
 
   @media ($viewport-desktop) {
@@ -62,7 +61,8 @@
 
 
   &:hover,
-  :focus-visible {
+  &:focus-visible {
+    outline: none;
     color: $base-primary;
   }
 
@@ -97,7 +97,11 @@
 
   border: none;
 
+
   cursor: pointer;
+
+  -webkit-tap-highlight-color: transparent;
+
   background-image: url("../../icons/burger.svg");
   background-repeat: no-repeat;
   background-size: 16px 12px;
@@ -107,10 +111,10 @@
   @media ($viewport-tablet) {
     display: none;
   }
-  // &:hover,
-  // :focus-visible {
-  //   background-color: $base-secondary;
-  // }
+
+  &:focus-visible {
+    outline: none;
+  }
 
   &:active {
     background-color: $base-secondary;

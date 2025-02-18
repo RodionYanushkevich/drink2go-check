@@ -14,6 +14,8 @@
   position: relative;
   padding: 0 0 0 52px;
 
+  -webkit-tap-highlight-color: transparent;
+
   &:hover::before,
   &:focus-visible::before {
     transition: background-color 300ms ease;
@@ -83,14 +85,6 @@
   }
 
   &:disabled:checked + .country-fieldset__label::after {
-    // border: 2px solid $light-grey;
-    // background-color: $light-grey;
     background-color: $base-grey;
   }
 }
-
-// .nouislider {
-//   display: flex;
-//   align-items: center;
-//   height: 24px;
-// }

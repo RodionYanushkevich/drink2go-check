@@ -1,10 +1,9 @@
 .contacts {
-  // padding: 20px;
   padding: 20px 20px 0;
   border-bottom: 1px solid $base-secondary;
 
   @media ($viewport-tablet) {
-    padding: 10px 17px 0 13px;
+    padding: 10px 20px 0 13px;
     border: none;
   }
 
@@ -31,8 +30,6 @@
   background-size: 13px 16px;
 
   &--address {
-    // background-size: 13px 16px;
-
     background-position: 0 2px;
     background-image: url("../../icons/address-icon.svg");
   }
